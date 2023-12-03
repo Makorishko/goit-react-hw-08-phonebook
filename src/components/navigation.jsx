@@ -19,17 +19,20 @@ export default function Navigation() {
       <Link to="/" state={{ from: location }}>
         Home
       </Link>
-      <Link to="/register" state={{ from: location }}>
-        Registration
-      </Link>
-      <Link to="/login" state={{ from: location }}>
-        Login
-      </Link>
 
-      {isLoggedIn && (
+      {isLoggedIn ? (
         <Link to="/contacts" state={{ from: location }}>
           Contacts
         </Link>
+      ) : (
+        <>
+          <Link to="/register" state={{ from: location }}>
+            Registration
+          </Link>
+          <Link to="/login" state={{ from: location }}>
+            Login
+          </Link>
+        </>
       )}
     </>
   );

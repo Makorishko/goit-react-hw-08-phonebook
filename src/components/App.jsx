@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { useEffect, lazy } from 'react';
 import { useDispatch } from 'react-redux';
-import { Layout } from './layout';
+import  Header from './header/header';
 
 import { PrivateRoute } from './privat-route';
 import { RestrictedRoute } from './restricted-route';
@@ -25,7 +25,7 @@ export const App = () => {
   ) : (
     <div>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Header />}>
           <Route index element={<HomePage />} />
           <Route
             path="/register"
