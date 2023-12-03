@@ -1,19 +1,10 @@
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
-  Text,
   IconButton,
-  Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
-  Stack,
 } from '@chakra-ui/react';
 import UserMenu from '../user-menu/user-menu';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
